@@ -1,0 +1,187 @@
+/*Import the font*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fredericka+the+Great&family=Open+Sans&display=swap');
+
+html {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+header {
+    background: url(images/quiltBlock.png) no-repeat;
+    background-color: linen; /*azureChange this when I decide on color scheme*/
+    background-blend-mode: overlay;
+    text-align: center;
+}
+
+a {
+    color: #011936;
+}
+
+body {
+    max-width: 1000px;
+    background: url(images/fabricBackground.jpg);
+/*
+    background-color: #C2EABD;
+    background-blend-mode: overlay;
+*/
+    margin: 0 auto;
+    color: #011936;
+}
+
+h1 {
+    color: #465362; /*ED254E*/
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navList li:hover {
+    animation: bounce 1.2s;
+}
+
+
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navList {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+/*    border: 1px solid red;*/
+    justify-content: space-around;
+/*    align-content: space-between;*/
+    margin: 0;
+}
+
+.navList li {
+    padding: 1rem;
+    text-align: center;
+}
+
+.productList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productList img {
+    height: 12rem;
+    width: 12rem;
+}
+
+.productList img:hover {
+    transform: scale(1.25);
+    transition: transform 0.25s ease;
+}
+
+figcaption {
+    position: relative;
+    text-align: center;
+}
+
+div {
+    background-color: white;
+    z-index: 999;
+    padding: 0.5rem;
+}
+
+#imagesGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 900px;
+/*    align-items: center;*/
+}
+
+#imagesGallery img {
+    height: 12rem;
+    width: 12rem;
+    cursor: zoom-in;
+/*
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease;
+    max-width: 100%;
+    cursor: zoom-in;
+*/
+}
+
+/*
+#imagesGallery img: active {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+*/
+
+.zoomed:active {
+    transition: transform 0.25s ease;
+    transform: scale(2);
+/*    position: fixed;*/
+/*
+    top: 5vh;
+    bottom: 5vh;
+    left: 5vh;
+    right: 5vh;
+*/
+/*
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+    border: 4px solid black;
+*/
+}
+
+#teamMembers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#team img {
+    height: 8rem;
+    width: 8rem;
+}
+
+#teamMembers p {
+    margin-top: 1px;
+    font-size: .75rem;
+    max-width: 250px;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+.toTop {
+    position: fixed;
+    bottom: 12%;
+    right: 5px;
+}
+
+footer {
+    text-align: center;
+    background: white;
+}
